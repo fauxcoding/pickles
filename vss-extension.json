@@ -1,6 +1,6 @@
 {
   "manifestVersion": 1,
-  "version": "1.22.6",
+  "version": "1.22.8",
   "name": "pickles",
   "description": "A simple gherkin editor for the work item form",
   "publisher": "heymega",
@@ -19,6 +19,9 @@
     "color": "rgb(127, 0, 255)",
     "theme": "dark"
   },
+  "screenshots": [
+    { "path": "img/screenshot-01.png" }
+  ],
   "repository": {
     "type": "git",
     "uri": "https://github.com/heymega/pickles"
@@ -53,12 +56,12 @@
         "ms.vss-work-web.work-item-form"
       ],
       "properties": {
-        "name": "Gherkin",
+        "name": "Pickles",
         "uri": "dist/gherkin/gherkin.html",
         "height": 600,
         "inputs": [
           {
-            "id": "GherkinFieldName",
+            "id": "PicklesInput",
             "name": "Field carrying a gherkin",
             "description": "Reference name of a string field to be updated.",
             "type": "WorkItemField",

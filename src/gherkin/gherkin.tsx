@@ -30,7 +30,7 @@ const Gherkin = () => {
 
     // The WIF field. Note: NOT the same thing as the Input Field Name
     // Todo: initially create this!
-    const gherkin: any = await workItemFormService.getFieldValue("GherkinField"); 
+    const gherkin: any = await workItemFormService.getFieldValue("PicklesField"); 
 
     setGherkin(gherkin);
   }
@@ -182,7 +182,7 @@ const Gherkin = () => {
       WorkItemTrackingServiceIds.WorkItemFormService
     );
 
-    var fieldName = SDK.getConfiguration().witInputs["GherkinFieldName"];
+    var fieldName = SDK.getConfiguration().witInputs["PicklesInput"];
 
     await workItemFormService.setFieldValue(fieldName, value);
   }
