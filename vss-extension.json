@@ -1,6 +1,6 @@
 {
   "manifestVersion": 1,
-  "version": "1.22.5",
+  "version": "1.22.6",
   "name": "pickles",
   "description": "A simple gherkin editor for the work item form",
   "publisher": "heymega",
@@ -8,19 +8,27 @@
     "api-version/3.0"
   ],
   "categories": [
-    "Azure Repos"
+    "Azure Boards"
   ],
   "targets": [
     {
       "id": "Microsoft.VisualStudio.Services"
     }
   ],
+  "branding": {
+    "color": "rgb(127, 0, 255)",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "uri": "https://github.com/heymega/pickles"
+  },
   "content": {
     "details": {
       "path": "README.md"
     },
     "license": {
-      "path": "License.md"
+      "path": "LICENSE"
     }
   },
   "icons": {
@@ -40,7 +48,7 @@
     {
       "id": "sample-work-item-form-control",
       "type": "ms.vss-work-web.work-item-form-control",
-      "description": "Updates a field with easy to remember code name",
+      "description": "Gherkin editor form control",
       "targets": [
         "ms.vss-work-web.work-item-form"
       ],
@@ -48,7 +56,6 @@
         "name": "Gherkin",
         "uri": "dist/gherkin/gherkin.html",
         "height": 600,
-        "icons" : ["img/pickles-logo.png"],
         "inputs": [
           {
             "id": "GherkinFieldName",
