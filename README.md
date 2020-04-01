@@ -1,10 +1,11 @@
 
 ![pickles logo](/img/pickles-banner.png)
 
-## Overview
-A simple gherkin editor for the work item form
 
-![pickles logo](/img/screenshot-01.png)
+A simple gherkin editor for the work item form with Gherkin code snippets.
+
+
+![pickles logo](/img/screenshot-02.png)
 
 ## Installation
 
