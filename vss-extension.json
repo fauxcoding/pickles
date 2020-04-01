@@ -1,8 +1,8 @@
 {
   "manifestVersion": 1,
   "version": "1.22.5",
-  "name": "Pickles",
-  "description": "Adds a simple gherkin editor for the work item form",
+  "name": "pickles",
+  "description": "A simple gherkin editor for the work item form",
   "publisher": "heymega",
   "demands": [
     "api-version/3.0"
@@ -20,7 +20,7 @@
       "path": "README.md"
     },
     "license": {
-      "path": "README.md"
+      "path": "License.md"
     }
   },
   "icons": {
@@ -48,6 +48,7 @@
         "name": "Gherkin",
         "uri": "dist/gherkin/gherkin.html",
         "height": 600,
+        "icons" : ["img/pickles-logo.png"],
         "inputs": [
           {
             "id": "GherkinFieldName",

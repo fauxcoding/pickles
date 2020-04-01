@@ -1,5 +1,5 @@
 
-![](./img/pickles-banner.png)
+![pickles logo](/img/pickles-banner.png)
 
 
 ## Installation
