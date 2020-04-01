@@ -1,0 +1,69 @@
+{
+  "manifestVersion": 1,
+  "version": "1.22.5",
+  "name": "Pickles",
+  "description": "Adds a simple gherkin editor for the work item form",
+  "publisher": "heymega",
+  "demands": [
+    "api-version/3.0"
+  ],
+  "categories": [
+    "Azure Repos"
+  ],
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "content": {
+    "details": {
+      "path": "README.md"
+    },
+    "license": {
+      "path": "README.md"
+    }
+  },
+  "icons": {
+    "default": "img/pickles-logo.png"
+  },
+  "files": [
+    {
+      "path": "dist",
+      "addressable": true
+    },
+    {
+      "path": "img",
+      "addressable": true
+    }
+  ],
+  "contributions": [
+    {
+      "id": "sample-work-item-form-control",
+      "type": "ms.vss-work-web.work-item-form-control",
+      "description": "Updates a field with easy to remember code name",
+      "targets": [
+        "ms.vss-work-web.work-item-form"
+      ],
+      "properties": {
+        "name": "Gherkin",
+        "uri": "dist/gherkin/gherkin.html",
+        "height": 600,
+        "inputs": [
+          {
+            "id": "GherkinFieldName",
+            "name": "Field carrying a gherkin",
+            "description": "Reference name of a string field to be updated.",
+            "type": "WorkItemField",
+            "validation": {
+              "dataType": "String",
+              "isRequired": true
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "scopes": [
+    "vso.work"
+  ]
+}

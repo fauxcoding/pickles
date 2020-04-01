@@ -1,2 +1,12 @@
-# azure-devops-extension-gherkin
-Adds a gherkin editor to the Work Item forms in Azure DevOps.
+
+![](./img/pickles-banner.png)
+
+
+## Installation
+
+### Pickles in Page (Recommended)
+
+
+### Pickles in a Work Group
+
+
