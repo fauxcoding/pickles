@@ -1,7 +1,3 @@
-
-![pickles logo](/img/pickles-banner.png)
-
-
 A simple gherkin editor for the work item form with Gherkin code snippets.
 
 
@@ -22,6 +18,8 @@ Then in the options choose the custom field created in previous step.
 
 ## Release notes
 
+### 0.1.1
+* Updated README
+* Fixed issue with Fonts
 ### 0.1.0
-
 * First published version
