@@ -18,6 +18,9 @@ Then in the options choose the custom field created in previous step.
 
 ## Release notes
 
+### 0.1.2
+* Fixed issue where characters were being HTML encoded.
+
 ### 0.1.1
 * Updated README
 * Fixed issue with Fonts

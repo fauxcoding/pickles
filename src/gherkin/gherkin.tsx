@@ -4,6 +4,7 @@ import * as SDK from "azure-devops-extension-sdk";
 import { IWorkItemFormService, WorkItemTrackingServiceIds } from "azure-devops-extension-api/WorkItemTracking";
 import MonacoEditor from 'react-monaco-editor';
 import * as monacoEditor from 'monaco-editor/esm/vs/editor/editor.api';
+import { encode, decode } from 'html-entities';
 
 const Gherkin = () => {
 
@@ -30,9 +31,9 @@ const Gherkin = () => {
 
     // The WIF field. Note: NOT the same thing as the Input Field Name
     // Todo: initially create this!
-    const gherkin: any = await workItemFormService.getFieldValue("PicklesField"); 
+    const gherkin: any = await workItemFormService.getFieldValue("PicklesField", { returnOriginalValue: true }); 
 
-    setGherkin(gherkin);
+    setGherkin(decode(gherkin));
   }
 
   const onEditorWillMount = (monaco: typeof monacoEditor) => {
@@ -184,7 +185,7 @@ const Gherkin = () => {
 
     var fieldName = SDK.getConfiguration().witInputs["PicklesInput"];
 
-    await workItemFormService.setFieldValue(fieldName, value);
+    await workItemFormService.setFieldValue(fieldName, encode(value));
   }
 
   if(loading) return null;
